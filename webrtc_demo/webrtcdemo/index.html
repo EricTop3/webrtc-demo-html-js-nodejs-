@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>上海联彤</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+  <h1>欢迎使用联彤视频通信</h1>
+
+	<div>
+		<text>当前用户ID:</text>
+		<text id="myIdText"></text>
+	</div>
+
+	<div>
+	<text>本地视频:</text>
+  <video id="localVideo" autoplay></video>
+  </div>
+  <div class = "nowrap">
+  <text>远程视频:</text>
+  <text id="videoTitle0"></text>
+  <video id="remoteVideo0" autoplay></video>
+  <text id="videoTitle1"></text>
+  <video id="remoteVideo1" autoplay></video>
+  <text id="videoTitle2"></text>
+  <video id="remoteVideo2" autoplay></video>
+  <text id="videoTitle3"></text>
+  <video id="remoteVideo3" autoplay></video>
+  <text id="videoTitle4"></text>
+  <video id="remoteVideo4" autoplay></video>
+  </div>
+ 
+  <div>
+    <text>:请输入对方ID:</text>
+	<input type="text" id="remoteNameText" placeholder="234"></input>
+  </div>
+  <div>
+    <button id="startButton">Start</button>
+    <button id="callButton">Call</button>
+    <button id="hangupButton">Hang Up</button>
+  </div>
+    <div>
+    <text id="">当前在线用户:</text>
+	<text id="clientText"></text>
+  </div>
+  
+  <text id="toastText"></text>
+  
+  <script src="/webrtc/socket.io/socket.io.js"></script>
+  <script src="js/lib/adapter.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+
+</html>
